@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support Dashboard</title>
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="server-container" id="serverList"></div>
+
+    <div class="ticket-form-section">
+    <h2>Yeni Arıza Kaydı Aç</h2>
+    <form id="ticketForm">
+     <input type="text" id="username" placeholder="Adınız Soyadınız" maxlength="50" required>
+<textarea id="issue" placeholder="Sorun nedir?" maxlength="150" required></textarea>
+        <select id="department">
+            <option value="IT">IT</option>
+            <option value="Muhasebe">Muhasebe</option>
+            <option value="IK">İnsan Kaynakları</option>
+        </select>
+
+        <button type="submit">Talep Oluştur</button>
+    </form>
+</div>
+
+
+
+<div class="ticket-list-section">
+    <h2>Gelen Arıza Talepleri</h2>
+    <ul id="ticketList"></ul>
+</div>
+
+    <script src="sa.js"></script>
+</body>
+</html>
